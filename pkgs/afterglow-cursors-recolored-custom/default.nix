@@ -16,7 +16,7 @@
   },
   ...
 }:
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation {
   name = "afterglow-cursors-recolored-custom";
   version = "0-unstable-2023-10-04";
 
