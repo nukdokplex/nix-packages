@@ -50,17 +50,17 @@ stdenv.mkDerivation rec {
     homepage = "https://www.epson.eu/en_EU/support/sc/epson-l120/s/s1346";
     description = "Epson printer driver for L120 series inkjet printers";
     longDescription = ''
-        This software is a filter program used with the Common UNIX Printing
-        System (CUPS) under Linux. It supplies high quality printing with
-        Seiko Epson L120 series printers.
+      This software is a filter program used with the Common UNIX Printing
+      System (CUPS) under Linux. It supplies high quality printing with
+      Seiko Epson L120 series printers.
 
-        To use the driver adjust your configuration.nix file:
-          services.printing = {
-            enable = true;
-            drivers = [ pkgs.epson_201310w ];
-          };
-      '';
-    license = with licenses; [ lgpl21 epson ];
-    platforms = [ "x86_64-linux" ];
+      To use the driver adjust your configuration.nix file:
+        services.printing = {
+          enable = true;
+          drivers = [ pkgs.epson_201310w ];
+        };
+    '';
+    license = with licenses; [lgpl21 epson];
+    platforms = ["x86_64-linux"];
   };
 }
